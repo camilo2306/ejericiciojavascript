@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Ciclo For</title>
+</head>
+<body>
+        <script>
+            /* var num=0, sum=0, mult=1;
+
+            for (let i = 1; i <= 10 ; i++) {
+                num = parseInt(prompt("Ingrese el "+i+"° número: "));
+                
+                if (num >= 0) {
+                    sum = sum + num;
+                } else {
+                    mult = mult * num;
+                }
+            }
+
+            alert("La suma de los positivos es: "+sum);
+            alert("La multiplicación de los negativos es: "+mult); */
+            
+            /* var  cubo=0, cuadrado=0;
+            alert("El cuadrado de los números es: ");
+            for (let i = 1; i <= 10; i++) {
+                cuadrado = Math.pow(i,2);
+                alert(i+"^2 = "+cuadrado);                
+            }
+            alert("El cubo de los números es: ");
+            for (let i = 1; i <= 10; i++) {
+                cubo = Math.pow(i,3);
+                alert(i+"^3 = "+cubo);                
+             } */
+
+            /* var num=0;
+             num = parseInt(prompt("Ingrese el número boleta ese: "));
+             for (let i = 1; i <= 10; i++) {
+                
+                document.write("<p>"+num+"x"+i+"="+(num*i)+"</p>");
+             }*/
+
+            /* var nombre, sueldo, sexo, cantimu=0, cantihombre=0;
+
+             for (let i = 1;  i<=10; i++) {
+                 nombre = prompt("ingrese su nombre ");
+                 sueldo = parseFloat(prompt("ingrese su sueldo"));
+                 sexo = parseInt(prompt("ingrese su sexo, 1 = femenino. 2 = masculino"));
+
+                 if(sexo==1 && sueldo>500){
+                    cantimu++;
+                     
+                 }else if(sexo==2 && sueldo<400){
+                    cantihombre++
+                 }
+                 
+                 alert("la cantidad de  las mujeres que ganan mas de 500 son: "+cantimu);
+                 alert("la cantidad de hombre que ganan menos de 400 son: "+cantihombre);
+
+             }*/
+
+             /* var num=0, prom=0, sum=0;
+             
+             for (let i = 1; i<=5; i++) {
+                num = parseInt(prompt("ingrese el "+i+" ° numero "));
+                 sum = sum+num;
+             }
+             prom = sum/5;
+             alert("el promedio es: "+prom); */
+             
+            /* var num=0, mayores=0,menores=0;
+
+             for (let i = 1; i <=15; i++) {
+                 num = parseFloat(prompt("ingrese "+i+" ° numeros"));
+                if (num>0) {
+                    mayores++;
+                }else if(num<0){
+                    menores++;
+                }
+               
+             }
+             alert("los mayores a 0 son: "+mayores);
+             alert("los menores a 0 son: "+menores);
+             */
+
+             var valor, descuento, totaldescuento, totalpagar;
+             valor = parseFloat(prompt("ingrese el valor del traje "))
+             if(valor>150000){
+                descuento = 15;
+                totaldescuento=valor*0.15;
+                totalpagar=valor-totaldescuento
+             }else {
+                 descuento=8;
+                 totaldescuento=valor*0.08;
+                 totalpagar=valor-totaldescuento
+             }
+
+             alert("el descuento aplicado es: "+descuento+"%")
+             alert("el valor del descuento es de: $"+totaldescuento);
+             alert("el valor a pagar es de: $"+totalpagar);
+
+        </script>
+</body>
+</html>
