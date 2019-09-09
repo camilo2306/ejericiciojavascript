@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Ejercicios JS</title>
+</head>
+<body>
+    <!-- EJERCICIO 1: 
+        <script>
+            var opci, num1, num2, resul;
+
+            num1 = parseInt(prompt("digite el primer numero"));
+            num2 = parseInt(prompt("digite el segundo numero"));
+
+            alert("las opciones son las siguientes");
+            alert("1. adicion\n2. sustraccion\n3. multiplicacion\n4. division");
+
+
+            opci = parseInt(prompt("digite la opcion que desea hacer"));
+
+            if(opci==1){
+
+                resul = num1 + num2;
+                alert("la suma entre "+num1+" y "+num2+" es "+resul);
+            }else if(opci==2){
+
+                resul = num1 - num2;
+                alert("la resta entre "+num1+" y "+num2+" es "+resul);
+            }else if(opci==3){
+
+                resul = num1 * num2;
+                alert("la multiplicacion entre "+num1+" y "+num2+" es "+resul);
+             }else if(opci==4){
+
+                resul = num1 / num2;
+                alert("la division entre "+num1+" y "+num2+" es "+resul);
+            }else {
+                alert("error.. introdusca una opcion valida")
+            }
+
+        </script> -->
+
+    <!-- EJERCICIO 2:
+        <script>
+        var r, b, h, a, op;
+
+        alert("Programa para calcular el área de varias figuras geométricas: \n-----------------------------------------------------------\n"+
+        "Hallar el área del: \n1. Círculo\n2.Rectángulo\n3.Triángulo");
+        op = parseInt(prompt("Ingrese la opción que desea realizar: "));
+
+        if (op == 1) {
+            r = parseFloat(prompt("Ingrese el valor del radio del círculo: "));
+            a = Math.PI * Math.pow(r,2);
+            alert("El área del círculo es: "+a);
+        } else  if (op == 2) {
+            b = parseFloat(prompt("Ingrese el valor de la base del rectángulo: "));
+            h = parseFloat(prompt("Ingrese el valor de la altura del rectángulo: "));
+            a = b * h;
+            alert("El área del rectángulo es: "+a);
+        } else if (op == 3) {
+            b = parseFloat(prompt("Ingrese el valor de la base del triángulo: "));
+            h = parseFloat(prompt("Ingrese el valor de la altura del triángulo: "));
+            a = (b * h) / 2;
+            alert("El área del triángulo es: "+a);
+        } else{
+            alert("Opción inválida");
+        }
+    </script> -->
+
+    <!-- EJERCICIO 3:
+        <script>
+        
+        var mes;
+
+        mes = parseInt(prompt("digite el numero del mes"));
+
+        if (mes==1 || mes==3 || mes==5 || mes==7 || mes==8 || mes==10 || mes==12) {
+            alert("el mes "+mes+" tiene 31 dias")
+        } else {
+            
+        }if (mes==4 || mes==6 || mes==9 || mes==11 ) {
+            alert("el mes "+mes+" tiene 30 dias")
+        } else {
+            
+        }if (mes==2) {
+            alert("el mes "+mes+" tiene 28 dias")
+        } else {
+            alert("digite un numero de mes valido")
+        }
+        
+        
+        </script>
+    -->
+
+    <!-- EJERCICIO 4:
+        <script>
+        var nombre, carga, unidad, total;
+
+        alert("ELECTRICARIBE CAREVERGA S.A.R.\n---------------------------------------\n"+
+        "Ingrese los siguientes datos: \n*Nombre \n*Unidades Consumidas ");
+        nombre = prompt("Ingrese su nombre: ");
+        unidad = parseInt(prompt("Ingrese las unidades consumidas: "));
+
+        if (unidad <= 199) {
+            carga = 1.20;
+        } else if (unidad >= 200 && unidad < 400) {
+            carga = 1.50;
+        } else if (unidad >= 400 && unidad < 600) {
+            carga = 1.80;
+        } else if (unidad >= 600) {
+            carga = 2.00;
+        }
+
+        total = carga * unidad;
+        alert("ELECTRICARIBE CAREVERGA S.A.R.\n---------------------------------------\n"+
+        "Señor "+nombre+", el total a pagar es de: $"+total);
+    </script> -->
+
+    <!-- EJERCICIO 5: 
+        <script>
+    var caracter,
+
+    caracter=prompt("ingrese el caracter").toUpperCase();
+
+    if(caracter=='A' || caracter=='E' || caracter=='I' || caracter=='O' || caracter=='U'){
+        alert("el caracter "+caracter+" es una vocal");
+    }else if(caracter=='B' || caracter=='C' || caracter=='D' || caracter=='F' || caracter=='G' || caracter=='H' || caracter=='J' || caracter=='K' || caracter=='L' || caracter=='M' || caracter=='N' || caracter=='Ñ' || caracter=='P' || caracter=='Q' || caracter=='R' || caracter=='S' || caracter=='T' || caracter=='V' || caracter=='W' || caracter=='X' || caracter=='Y' || caracter=='Z'){
+        alert("el caracter "+caracter+" es una consonante");
+    }else {
+        alert("ERROR... esto es un caracter")
+    }
+    
+    </script> -->
+
+    <!-- EJERCICIO 6:
+        <script>
+        var n,f;
+        n = prompt("Ingrese el valor de N");
+        f = n*((1/Math.sqrt(5))*(Math.pow(((1+Math.sqrt(5))/2),n)-Math.pow((1-Math.sqrt(5))/2),n));
+        alert("F(N)= "+f);
+    </script> -->
+
+    <!-- EJERCICIO 7: 
+        <script>
+    
+        var n1, n2, n3;
+
+        n1=parseInt(prompt("digite el 1° numero "));
+        n2=parseInt(prompt("digite el 2° numero"));
+        n3=parseInt(prompt("digite 3° numero"));
+
+        if (n1>=n2 && n1>=n3) {
+            alert("el numero "+n1+" es el mayor");
+        } else if(n2>=n1 && n2>=n3){
+            alert("el numero "+n2+" es el mayor");
+        }else {
+            alert("el numero "+n3+" es el mayor");
+        }
+        
+        </script> -->
+
+    <!-- EJERCICIO 8:
+            <script>
+            var precio, total, descuento;
+
+            precio = parseFloat(prompt("Ingrese el valor de la compra: "));
+            
+            if (precio >= 200) {
+                    descuento = precio * 0.15;
+                    total = precio - descuento;
+            } else  if (precio > 100 && precio < 200)  {
+                    descuento = precio * 0.12;
+                    total = precio - descuento;
+            } else  if (precio < 100)  {
+                    descuento = precio * 0.10;
+                    total = precio - descuento;
+            } else{
+                alert("Escriba bien ome bobo >:v ");
+            }
+
+            alert("El descuento es de: "+descuento+" y el total a pagar es de: $"+total);
+        </script> -->
+</body>
+</html>
