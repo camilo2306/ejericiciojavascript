@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        
+        /* 
+        EJERCICIO 1: 
+        let cant = parseInt(prompt("Digite la cantidad de números: ")); 
+        let i = 0;
+        while (i<=cant) {
+            num = prompt("Digite un número: ");
+            document.write("<p>"+(num*2)+"</p>");
+            i++;
+        } */
+        /* 
+        EJERCICIO 2:
+        let i = 1;
+        let suma = 0;
+        while (i<=5) {
+            num = parseInt(prompt("Digite un número: "));
+            suma += num;
+            document.write("<p>Número ingresado: "+num+"</p>");
+            
+            i++;
+        }
+        document.write("<hr>");
+        document.write("<p>El promedio es: "+(suma/5)+ "</p>"); */
+        /* 
+        EJERCICIO 3: */
+        let cantPositivos=0, cantNegativos=0;
+        let i = 1;
+        while (i<=5) {
+            num = parseInt(prompt("Digite un número: "));
+            if (num>0) {
+                cantPositivos++;
+            } else if(num<0){
+                cantNegativos++;
+            }
+            i++;
+        } 
+        document.write("<p>La cantidad de números positivos es: "+cantPositivos+"</p>");
+        document.write("La cantidad de números negativos es: "+cantNegativos+"</p>");
+    </script>
+</body>
+</html>
